@@ -1658,10 +1658,14 @@ version = "0.1.0"
 source = { virtual = "code_along/week5_dlt" }
 dependencies = [
     { name = "dlt", extra = ["duckdb"] },
+    { name = "pandas" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "dlt", extras = ["duckdb"], specifier = ">=1.19.1" }]
+requires-dist = [
+    { name = "dlt", extras = ["duckdb"], specifier = ">=1.19.1" },
+    { name = "pandas", specifier = ">=2.3.3" },
+]
 
 [[package]]
 name = "win-precise-time"
