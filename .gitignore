@@ -108,3 +108,4 @@ cython_debug/
 
 *.duckdb
 *.wal
+.evidence
