@@ -1,0 +1,20 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports: # port mapping between host machine and container
+      - "${POSTGRES_PORT}:5432"
+    volumes: # distinguish between named volumes and bind mounts
+
+    healthcheck: # define a check after the container is up running
+
+
+
+
+volumes: #named volume (which can be seen under the Volume section of the GUI)
+  postgres_data: 
